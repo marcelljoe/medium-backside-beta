@@ -36,11 +36,11 @@ app.group("/api/v1", router => {
   router.delete("/ctg/:id", CategoryController.delete);
 
   router.get("/arts", ArticleController.index);
+  router.get("/artsl", ArticleController.latest);
   router.get("/art/:id", ArticleController.show);
   router.post("/art", ArticleController.store);
   router.patch("/art/:id", ArticleController.update);
   router.delete("/art/:id", ArticleController.delete);
-
 
 });
 

@@ -2,9 +2,10 @@ const models = require('../models')
 const categories = models.categories
 
 exports.index = (req, res) => {
-    categories.findAll({
+    categories.findAll({  
     }).then(categories => res.send(categories))
 }
+
 
 exports.show = (req, res) => {
     categories.findOne({ id: req.params.id }).then(categories => res.send(categories))
