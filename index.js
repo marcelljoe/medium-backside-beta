@@ -27,7 +27,7 @@ app.use(function(req, res, next) {
 
 //create the homepage route
 app.get("/", (req, res) => {
-  res.send("Hello Express!");
+  res.send("EHHEHEHEHEHEHHE");
 });
 
 app.group("/api/v1", router => {
