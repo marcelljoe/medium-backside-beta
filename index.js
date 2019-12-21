@@ -9,7 +9,7 @@ const app = express();
 //init bodyparser
 const bodyParser = require("body-parser");
 //define the server port
-const port = process.env.port || 4000;
+const port = process.env.PORT || 4000;
 
 const CategoryController = require("./controllers/categories");
 const ArticleController = require("./controllers/articles");
